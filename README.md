@@ -17,13 +17,34 @@ The script fetches data for a given gene name and prints the associated informat
 ### How It Works
 
 The script contains two main functions:
-
+```
 - `read_from_url(url)`: Makes a GET request and returns parsed JSON data.
 - `fetch_gene_by_name(gene_name)`: Constructs the appropriate URL using the gene name and calls `read_from_url`.
 
 ### Example Input
 
+```
 ```python
 gene_name = 'nanog'
 gene_data = fetch_gene_by_name(gene_name)
 print(gene_data)
+```
+### Requirements
+* Python 3.x
+* requests library
+Install it using pip if not already installed:
+pip install requests
+
+### Applications
+
+* This tool can be used for:
+* Bioinformatics and systems biology, to fetch gene-level annotations.
+* Automated data mining from public gene knowledge bases.
+* Gene prioritization pipelines, where functional data needs to be aggregated.
+* Educational purposes, for exploring the structure and use of RESTful APIs in genomics.
+
+### License
+This project is distributed under the MIT License, allowing for free use, modification, and distribution.
+
+
+
